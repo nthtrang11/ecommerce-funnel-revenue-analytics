@@ -4,18 +4,21 @@
 
 This document defines the end-to-end analytical workflow used throughout the project.
 
-The pipeline ensures that business requirements are systematically translated into analytical findings, business insights, and actionable business recommendations.
+The pipeline ensures that business requirements are translated into analytical outputs, business insights, and actionable recommendations.
 
 ---
 
-# Phase 1 – Business Understanding
+# Phase 1 – Business Understanding & Analytics Planning
 
 ## Objectives
 
-* Understand business context
-* Identify stakeholder requirements
-* Define business questions
-* Define project scope
+* Understand the business context and stakeholder requirements
+* Define business questions and analytical objectives
+* Establish project scope
+* Understand dataset structure and relationships
+* Define KPI framework
+* Develop analytical hypotheses
+* Design the overall analytical workflow
 
 ## Deliverables
 
@@ -23,46 +26,19 @@ The pipeline ensures that business requirements are systematically translated in
 * Stakeholder Requirements
 * Business Questions
 * Project Scope
-
----
-
-# Phase 2 – Data Understanding
-
-## Objectives
-
-* Explore dataset structure
-* Understand table relationships
-* Identify analytical grain
-* Build data documentation
-
-## Deliverables
-
 * Data Dictionary
-* Entity Relationship Diagram (ERD)
-
----
-
-# Phase 3 – Analytical Planning
-
-## Objectives
-
-* Define business metrics
-* Standardize KPI calculations
-* Build a business logic tree
-* Develop testable analytical hypotheses
-
-## Deliverables
-
 * Metric Framework
-* Logic Tree
-* Hypotheses Document
+* Hypotheses
+* Analytics Pipeline
 
 ---
 
-# Phase 4 – SQL Analytics
+# Phase 2 – SQL Analytics
 
 ## Objectives
 
+* Validate data quality
+* Calculate business KPIs
 * Analyze acquisition performance
 * Analyze conversion performance
 * Analyze revenue performance
@@ -77,75 +53,48 @@ The pipeline ensures that business requirements are systematically translated in
 ## Deliverables
 
 * SQL Scripts
+* KPI Datasets
 * Analytical Outputs
 
 ---
 
-# Phase 5 – Exploratory Data Analysis
+# Phase 3 – Python EDA & Statistical Validation
 
 ## Objectives
 
-* Explore behavioral patterns
-* Identify trends and anomalies
+* Explore behavioral patterns and trends
 * Investigate business drivers
-* Support hypothesis evaluation
+* Identify anomalies and opportunities
+* Validate analytical hypotheses
+* Perform statistical testing
+* Generate data-driven insights
 
 ## Tools
 
 * Python
 * Pandas
+* NumPy
 * Matplotlib
-
-## Deliverables
-
-* EDA Notebook
-* Visualizations
-
----
-
-# Phase 6 – Statistical Validation
-
-## Objectives
-
-* Validate analytical hypotheses
-* Assess statistical significance
-* Quantify uncertainty
-
-## Tools
-
 * SciPy
 * Statsmodels
 
 ## Deliverables
 
-* Statistical Analysis Report
-
----
-
-# Phase 7 – Insight Development
-
-## Objectives
-
-* Interpret analytical findings
-* Identify key business drivers
-* Generate actionable insights
-* Develop business recommendations
-
-## Deliverables
-
+* EDA Notebooks
+* Statistical Analysis
+* Hypothesis Validation Results
 * Insight Summary
-* Business Recommendations
 
 ---
 
-# Phase 8 – Reporting & Dashboard Development
+# Phase 4 – Dashboard & Reporting
 
 ## Objectives
 
-* Communicate analytical findings
-* Visualize KPIs
-* Present business recommendations
-* Support business decision-making
+* Visualize KPIs and analytical findings
+* Communicate business insights
+* Support stakeholder decision-making
+* Present actionable recommendations
 
 ## Tools
 
@@ -153,8 +102,9 @@ The pipeline ensures that business requirements are systematically translated in
 
 ## Deliverables
 
-* Executive Dashboard
-* Final Business Report
+* Interactive Dashboard
+* Executive Summary
+* Business Recommendations
 
 ---
 
@@ -176,19 +126,11 @@ Project Scope
 
 ↓
 
-Data Understanding
-
-↓
-
-Data Dictionary & ERD
+Data Dictionary
 
 ↓
 
 Metric Framework
-
-↓
-
-Logic Tree
 
 ↓
 
@@ -200,11 +142,7 @@ SQL Analytics
 
 ↓
 
-EDA
-
-↓
-
-Statistical Validation
+EDA & Statistical Validation
 
 ↓
 
@@ -212,20 +150,20 @@ Insights
 
 ↓
 
-Business Recommendations
+Recommendations
 
 ↓
 
-Dashboard Reporting
+Dashboard & Reporting
 
 ---
 
 # Expected Outcomes
 
-The analytical pipeline aims to:
+The project aims to:
 
-1. Answer key business questions using data.
-2. Identify drivers of acquisition, conversion, revenue, refund, retention, and attribution performance.
+1. Measure acquisition, conversion, revenue, refund, retention, and attribution performance.
+2. Answer key business questions using data.
 3. Validate analytical hypotheses using quantitative evidence.
 4. Generate actionable business insights and recommendations.
 5. Deliver an executive-level dashboard for decision support.

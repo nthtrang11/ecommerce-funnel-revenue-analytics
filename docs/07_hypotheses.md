@@ -4,13 +4,54 @@
 
 This document defines the analytical hypotheses that will be evaluated throughout the project.
 
-The hypotheses are derived from the business questions and metric framework and are organized according to a MECE (Mutually Exclusive, Collectively Exhaustive) analytical structure.
+The hypotheses are derived from the business questions and metric framework.
 
 The objective is to identify potential drivers of business performance and validate them through data analysis.
 
-The hypotheses follow the e-commerce customer journey framework:
+---
 
-**Acquisition → Conversion → Revenue → Refund → Retention → Attribution**
+# Analytical Structure
+
+The project follows a MECE (Mutually Exclusive, Collectively Exhaustive) analytical framework.
+
+The primary business objective is sustainable revenue growth through improvements in acquisition, conversion, retention, and profitability.
+
+The analytical domains are organized as follows:
+
+Revenue Growth
+
+├── Acquisition
+
+│   ├── Traffic Sources
+│   ├── Campaign Performance
+│   └── User Acquisition
+
+├── Conversion
+
+│   ├── Funnel Performance
+│   ├── Device Performance
+│   └── User Behavior
+
+├── Revenue
+
+│   ├── Revenue Contribution
+│   └── Average Order Value
+
+├── Refund
+
+│   ├── Refund Rate
+│   ├── Refund Amount
+│   └── Net Revenue
+
+├── Retention
+
+│   ├── Returning Users
+│   └── Customer Lifetime Value
+
+└── Attribution
+
+    ├── First-Touch Attribution
+    └── Last-Touch Attribution
 
 ---
 
@@ -91,15 +132,15 @@ Reducing checkout friction may substantially improve conversion performance and 
 
 ---
 
-## H5 — Mobile Users Convert Less Efficiently Than Desktop Users
+## H5 — Conversion Rates Differ Across Device Types
 
 ### Hypothesis
 
-Mobile users have lower conversion rates than desktop users.
+Conversion rates differ across device types.
 
 ### Business Impact
 
-Optimizing the mobile user experience may increase completed purchases and overall conversion performance.
+Understanding device-specific conversion behavior may help optimize the user experience and improve overall conversion performance.
 
 ### Metrics
 
@@ -188,15 +229,15 @@ Refund behavior may serve as an early warning signal for quality management and 
 
 # Retention
 
-## H10 — Returning Users Have Higher Conversion Rates Than New Users
+## H10 — Conversion Rates Differ Between Returning Users and First-Time Users
 
 ### Hypothesis
 
-Returning users convert at a higher rate than first-time visitors.
+Conversion rates differ between returning users and first-time users.
 
 ### Business Impact
 
-Customer retention initiatives may generate greater profitability than acquisition-focused strategies alone.
+Understanding behavioral differences between customer groups can support both retention and acquisition strategies.
 
 ### Metrics
 
@@ -245,18 +286,16 @@ Marketing budget allocation and performance evaluation depend on the attribution
 
 # Statistical Validation
 
-The following hypotheses may be evaluated using statistical methods where appropriate.
-
-| Hypothesis | Potential Statistical Method          |
-| ---------- | ------------------------------------- |
-| H1         | Chi-square Test, Confidence Interval  |
-| H3         | Chi-square Test, ANOVA                |
-| H5         | Two-Proportion Z-Test                 |
-| H7         | Independent Samples t-Test, ANOVA     |
-| H9         | Confidence Interval Analysis          |
-| H10        | Two-Proportion Z-Test                 |
-| H11        | ANOVA, t-Test                         |
-| H12        | Correlation Analysis, Rank Comparison |
+| Hypothesis | Potential Statistical Method |
+|------------|-----------------------------|
+| H1 | Chi-square Test, Confidence Interval |
+| H3 | Chi-square Test, ANOVA |
+| H5 | Chi-square Test, Two-Proportion Z-Test |
+| H7 | Independent Samples t-Test, ANOVA |
+| H9 | Confidence Interval Analysis |
+| H10 | Two-Proportion Z-Test |
+| H11 | ANOVA, t-Test |
+| H12 | Correlation Analysis, Rank Comparison |
 
 ---
 
@@ -265,23 +304,14 @@ The following hypotheses may be evaluated using statistical methods where approp
 The project aims to validate the hypotheses and answer the following strategic questions:
 
 1. Which acquisition channels generate the highest-quality traffic?
-
 2. Which marketing campaigns create the greatest business impact?
-
 3. Where are the largest conversion bottlenecks within the customer journey?
-
 4. How does user behavior differ across device types?
-
 5. Which acquisition channels contribute most to revenue generation?
-
 6. How much revenue is lost due to product refunds?
-
 7. Which products present the greatest quality and profitability risks?
-
 8. Which acquisition channels generate the most loyal customers?
-
 9. Which customer groups create the highest long-term value?
-
 10. How does attribution methodology influence marketing performance evaluation?
 
 The findings will support data-driven decision-making across Marketing, Product, Finance, and Growth functions.

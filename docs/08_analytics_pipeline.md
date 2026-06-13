@@ -48,7 +48,7 @@ The pipeline ensures that business requirements are systematically translated in
 
 * Define business metrics
 * Standardize KPI calculations
-* Decompose business problems using Logic Trees
+* Build a business logic tree
 * Develop testable analytical hypotheses
 
 ## Deliverables
@@ -63,7 +63,6 @@ The pipeline ensures that business requirements are systematically translated in
 
 ## Objectives
 
-* Calculate KPIs
 * Analyze acquisition performance
 * Analyze conversion performance
 * Analyze revenue performance
@@ -73,7 +72,7 @@ The pipeline ensures that business requirements are systematically translated in
 
 ## Tools
 
-* SQL
+* SQL Server
 
 ## Deliverables
 
@@ -139,12 +138,13 @@ The pipeline ensures that business requirements are systematically translated in
 
 ---
 
-# Phase 8 – Dashboard Development
+# Phase 8 – Reporting & Dashboard Development
 
 ## Objectives
 
-* Visualize KPIs
 * Communicate analytical findings
+* Visualize KPIs
+* Present business recommendations
 * Support business decision-making
 
 ## Tools
@@ -153,7 +153,8 @@ The pipeline ensures that business requirements are systematically translated in
 
 ## Deliverables
 
-* Interactive Dashboard
+* Executive Dashboard
+* Final Business Report
 
 ---
 
@@ -215,7 +216,7 @@ Business Recommendations
 
 ↓
 
-Dashboard
+Dashboard Reporting
 
 ---
 

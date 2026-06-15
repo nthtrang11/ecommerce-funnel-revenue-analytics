@@ -136,29 +136,11 @@ WITH billing_sessions AS
 
 SELECT
     bs.billing_version,
-
-    COUNT(DISTINCT bs.website_session_id)
-        AS billing_sessions,
-
-    COUNT(DISTINCT o.order_id)
-        AS orders,
-
-    ROUND(
-        100.0 *
-        COUNT(DISTINCT o.order_id)
-        /
-        COUNT(DISTINCT bs.website_session_id),
-        2
-    ) AS checkout_conversion_rate
-
+    COUNT(DISTINCT bs.website_session_id) AS billing_sessions,
+    COUNT(DISTINCT o.order_id) AS orders,
+    ROUND(100.0 * COUNT(DISTINCT o.order_id) / COUNT(DISTINCT bs.website_session_id), 2) AS checkout_conversion_rate
 FROM billing_sessions bs
-
 LEFT JOIN [web_analytics].[orders] o
-    ON bs.website_session_id =
-       o.website_session_id
-
-GROUP BY
-    bs.billing_version
-
-ORDER BY
-    checkout_conversion_rate DESC;
+ON bs.website_session_id = o.website_session_id
+GROUP BY bs.billing_version
+ORDER BY checkout_conversion_rate DESC;
